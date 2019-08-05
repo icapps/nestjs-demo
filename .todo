@@ -1,0 +1,20 @@
+What to show in order of importance?
+    - Dependancy injection @done
+    - Swagger @done
+    - Testing @done
+    - Validation @done
+    - Database @done
+    - File upload @done
+    - Authentication @done
+
+To research
+    - Caching @done
+    - Serialization - EXPLAIN
+    - GraphQL - EXPLAIN
+
+NestJS components:
+    - Modules @done
+    - Injectables @done
+    - Controllers @done
+    - Guards @done
+    - Pipes - EXPLAIN
