@@ -21,7 +21,6 @@ import { FilesInterceptor } from '@nestjs/platform-express';
 import { DemoService } from './demo.service';
 import { Result } from '../shared/interfaces/result.interface';
 import { GetDemoResponse, PostDemoRequest, PostDemoResponse } from './dto';
-import { Demo } from '../database/entities/demo.entity';
 
 @Controller('demo')
 @ApiUseTags('Demo')
