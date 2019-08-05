@@ -5,6 +5,7 @@ import {
     UseGuards,
     Post,
     Get,
+    HttpCode,
 } from '@nestjs/common';
 import { ApiUseTags, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 
@@ -19,6 +20,7 @@ export class AuthController {
     public constructor(private readonly authService: AuthService) {}
 
     @Post('login')
+    @HttpCode(HttpStatus.OK)
     @ApiResponse({
         description: 'Successfully logged in',
         type: LoginResponse,
@@ -30,6 +32,7 @@ export class AuthController {
     }
 
     @Get('me')
+    @HttpCode(HttpStatus.OK)
     @UseGuards(AuthGuard('jwt'))
     @ApiBearerAuth()
     @ApiResponse({
